@@ -8,7 +8,7 @@ def home(request):
     context ={'images':image}
     return render(request,'home.html',context)
 def blog(request):
-     no_of_post=5
+     no_of_post=4
      page= request.GET.get('page')
      if page is None:
          page=1
