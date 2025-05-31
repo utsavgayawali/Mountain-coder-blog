@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-s32y#n@@t_k0cbmh4w_!n3+n+=!2t$tj^yc&gzxad*p$9vv3_y
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['mountain-coder-blog.onrender.com']
+ALLOWED_HOSTS = ['mountain-coder-blog.onrender.com', 'localhost','127.0.0.1']
 
 
 # Application definition
@@ -123,6 +123,8 @@ STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'static')
 ]
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+
+ROOT_URLCONF = 'Blogproject.urls'
 
 MEDIA_URL='/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
