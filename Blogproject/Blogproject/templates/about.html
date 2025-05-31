@@ -1,0 +1,158 @@
+{% extends "main.html" %} {% load static %} {% block body %} {% block css %}
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    height: 120vh;
+    width: 100%;
+    gap: 20rem;
+  }
+  .container {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100em;
+  }
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  .heading {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 60px;
+  }
+  .choose {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  .para {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+  }
+</style>
+
+{% endblock css %}
+
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+  <a class="navbar-brand" href="#">Mountain Coder</a>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="/home"
+          >Home <span class="sr-only">(current)</span></a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/blog">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/contact">Contact</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="/about">About</a>
+      </li>
+    </ul>
+    <form action="/search" method="get" class="form-inline my-2 my-lg-0">
+      <input
+        class="form-control mr-sm-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+        Search
+      </button>
+    </form>
+  </div>
+</nav>
+<body>
+  <h1 class="heading text-center my-3">About Mountain Coders</h1>
+  <div class="text-container mx-3">
+    <h2 class="choose">Who we are ?</h2>
+    <p class="para">
+      At Mountain Coder, we're a community of passionate developers, learners,
+      and tech explorers who believe in coding with clarity and calm—just like
+      the mountains. This blog is where we share our journey through code, from
+      beginner challenges to advanced backend systems, sprinkled with personal
+      insights and real-world learning.
+    </p>
+    <h2 class="choose">Our Mission</h2>
+    <p class="para">
+      To make backend development and programming accessible, practical, and
+      enjoyable for everyone—whether you're just starting or already scaling
+      your own tech peaks.
+    </p>
+  </div>
+  <h2 class="choose text-center my-3">why choose us ?</h2>
+  <div class="card-container">
+    <div class="frist-card">
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="/static/images/card1.jpg/"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title"> Collaborative Development</h5>
+          <p class="card-text">
+        Our team thrives in a dynamic environment, merging diverse skills to build innovative software solutions. See how we turn ideas into reality.
+          </p>
+          <a href="/blog" class="btn btn-primary">View Blog</a>
+        </div>
+      </div>
+    </div>
+    <div class="second-card">
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="/static/images/card2.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Code & Design</h5>
+          <p class="card-text">
+          Learn about our streamlined development process, from initial concept to final deployment, ensuring quality and efficiency in every project.
+          </p>
+          <a href="/blog" class="btn btn-primary">View Blog</a>
+        </div>
+      </div>
+    </div>
+    <div class="third-card">
+      <div class="card" style="width: 18rem">
+        <img
+          class="card-img-top"
+          src="/static/images/card3.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title">Join Our Journey</h5>
+          <p class="card-text">
+           We're always looking for passionate coders and creative minds to join our growing team. Find out how you can contribute to our success
+          </p>
+          <a href="/blog" class="btn btn-primary">View Blog</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+{% endblock body %}
