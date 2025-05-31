@@ -173,8 +173,8 @@ TINYMCE_DEFAULT_CONFIG = {
 
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': 'dws7excft',
-    'API_KEY': '469962734842228',
-    'API_SECRET': 'J7LM4QKo6lk9OQXwbFAWW0foswA'
+    'API_KEY': '782578241383943',
+    'API_SECRET': 'd_xsCJ5sF1aEaOE16PN6rVu_TRM'
 }
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
