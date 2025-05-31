@@ -171,11 +171,10 @@ TINYMCE_DEFAULT_CONFIG = {
     "content_css": "dark",
 }
 
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'dws7excft',
-    'API_KEY': '782578241383943',
-    'API_SECRET': 'd_xsCJ5sF1aEaOE16PN6rVu_TRM'
-}
+
+CLOUDINARY_CLOUD_NAME = os.environ.get('MY_CLOUDINARY_CLOUD_NAME')
+CLOUDINARY_API_KEY = os.environ.get('MY_CLOUDINARY_API_KEY')       
+CLOUDINARY_API_SECRET = os.environ.get('MY_CLOUDINARY_API_SECRET')
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
