@@ -16,3 +16,9 @@ admin.site.register(Contact)
 admin.site.register(Carousel,BlogAdmin)
 
 
+# admin panneel
+
+#  Usename : Blogproject
+#  password :blog1212
+
+
