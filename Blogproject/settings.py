@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-s32y#n@@t_k0cbmh4w_!n3+n+=!2t$tj^yc&gzxad*p$9vv3_y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['mountain-coder-blog-2.onrender.com','localhost','127.0.0.1']
 
 
 # Application definition
